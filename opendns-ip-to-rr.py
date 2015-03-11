@@ -46,7 +46,6 @@ def main():
             data = r.json()
 
             for rr in data["rrs"]:
-                print "RR: {}".format(rr['rr'])
                 trx.addEntity("maltego.DNSName", rr['rr'][:-1])
 
             trx.returnOutput()
