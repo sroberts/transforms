@@ -1,4 +1,7 @@
 #!/bin/bash
 
+touch .env
+echo "OPENDNS_TOKEN=<Your OPENDNS TOKEN>" >> .env
+
 curl https://raw.githubusercontent.com/sroberts/MaltegoTransform-Python/master/MaltegoTransform.py > lib/MaltegoTransform.py
 sudo pip install -r requirements.txt
