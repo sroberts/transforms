@@ -17,7 +17,7 @@ import requests
 import sys
 
 # from MaltegoTransform import MaltegoEntity
-from lib.MaltegoTransform import MaltegoTransform
+from MaltegoTransform import MaltegoTransform
 
 # Pull in API Key from .env
 OPENDNS_TOKEN = dotenv.get_variables(".env")['OPENDNS_TOKEN']
