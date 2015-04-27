@@ -61,10 +61,8 @@ def main():
 
     parser = ArgumentParser()
     parser.add_argument('-v', '--version', action='version', version='%(prog)s ' + __version__)
-    parser.add_argument('-i', '--ioc', dest='ioc', default=None,
+    parser.add_argument('-f', '--freegeoip', dest='freegeoip', default=None,
                         help='[OPTIONAL] An IoC to attribute.')
-    parser.add_argument('-m', '--md5', dest='md5', default=None,
-                        help='[OPTIONAL] An MD5 hash.')
     parser.add_argument('--maltego', dest='maltego', default=False, action='store_true',
                         help='[OPTIONAL] Run in Maltego compatibility mode.')
     args, _ = parser.parse_known_args()
